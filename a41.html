@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Centered Course Boxes</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: white;
+      margin: 0;
+    }
+
+    .container {
+      width: 220px;
+      height: 350px;
+      background: orange;
+      border-radius: 220px 220px 0 0;
+      padding: 20px 10px;
+      box-shadow: 0 0 10px #999;
+      box-sizing: border-box;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; 
+      gap: 10px;
+    }
+
+    .box {
+      width: 100%;
+      text-align: center;
+      font-weight: bold;
+      font-size: 24px;
+      padding: 20px 0;
+      color: white;
+      border: 2px dotted white;
+      box-shadow: 0 0 10px #ccc inset;
+      box-sizing: border-box;
+    }
+
+    .mca {
+      background-color: red;
+    }
+
+    .bca {
+      background-color: yellow;
+      color: black;
+    }
+
+    .bba {
+      background-color: green;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box mca">MCA</div>
+    <div class="box bca">BCA</div>
+    <div class="box bba">BBA</div>
+  </div>
+</body>
+</html>
